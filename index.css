@@ -1,0 +1,175 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px); /* Ajustez la valeur du flou selon vos besoins */
+    opacity: 1;
+    animation: zoomInOut 10s infinite alternate;
+    z-index: -1;
+  }
+  
+  .section:nth-child(odd) .background-image {
+    background: url('https://preview.redd.it/colour-out-of-spaceman-3200x1800-v0-6f47m0xy7ggb1.png?auto=webp&s=b9028ed9328cef0b947ac4d952759c28d20ff597') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .section:nth-child(even) .background-image {
+    background: url('https://www.teahub.io/photos/full/94-948097_galaxy-wallpaper-for-laptop.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  @keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+      @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes zoom-in {
+        from { transform: scale(1.2); }
+        to { transform: scale(1); }
+      }
+      .menu {
+        position: fixed;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        z-index: 1000;
+      }
+      .menu a {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+      }
+      .menu a:hover {
+        color: #de0257;
+      }
+      .menu .icon {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      #home .title {
+        animation: drop-from-top 1s ease forwards;
+      }
+      #about .title {
+        animation: drop-from-top 1s ease forwards;
+      }
+      #contact .title {
+        animation: drop-from-top 1s ease forwards;
+      }
+      #code .title {
+        animation: drop-from-top 1s ease forwards;
+      }
+      @keyframes drop-from-top {
+        from { transform: translateY(-50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      .typewriter {
+        overflow: hidden;
+        border-right: .15em solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+      }
+      .contact-form {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center; /* Center the form */
+      }
+      .contact-form input[type="text"],
+      .contact-form input[type="email"],
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      .contact-form textarea {
+        height: 150px;
+      }
+      .contact-form input[type="submit"] {
+        background: #b80257;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .fade-in-out-text {
+        display: none;
+        animation: fadeInOut 20s infinite;
+      }
+      @keyframes fadeInOut {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .social-icons a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 24px;
+        transition: color 0.3s;
+      }
+      .social-icons a:hover {
+        color: #000000;
+      }
+      .code-container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        box-sizing: border-box;
+        height: 400px;
+      }
+      .code-line {
+        animation: coding 2s infinite alternate;
+      }
+      @keyframes coding {
+        from { width: 0; }
+        to { width: 100%; }
+      }
