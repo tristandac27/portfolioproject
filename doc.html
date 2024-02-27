@@ -9,61 +9,118 @@
     <link rel="stylesheet" href="index.css">
     <style>
     
+
+      
+
+        .star-field {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("https://your-star-field-image.png") repeat;
+            z-index: -1;
+        }
+        
+      
+
+        .card {
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px; /* Ajustez la largeur selon vos besoins */
+        }
+
+        .header {
+            padding: 10px;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .btn-link {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
     </style>
-    </head>
-    <body>
-        <nav class="menu">
-            <a href="index.html"><i class="fas fa-home icon"></i></a>
-            <a href="techno.html"><i class="fas fa-info-circle icon"></i></a>
-            <a href="contact.html"><i class="fas fa-envelope icon"></i></a>
-            <a href="about.html"><i class="fas fa-graduation-cap icon"></i></a>
-            <a href="doc.html"><i class="fas fa-download icon" ></i></a>
-        </nav>
-    </div>
-
+</head>
+<body>
     <div class="bg"></div>
+    <div class="star-field"></div>
 
-    <div class="star-field">
-        <div class="layer"></div>
-        <div class="layer"></div>
-        <div class="layer"></div>
-    </div>
+    <nav class="menu">
+        <a href="index.html"><i class="fas fa-home icon"></i></a>
+        <a href="techno.html"><i class="fas fa-info-circle icon"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope icon"></i></a>
+        <a href="about.html"><i class="fas fa-graduation-cap icon"></i></a>
+        <a href="doc.html"><i class="fas fa-download icon"></i></a>
+    </nav>
 
-    <!-- Ajoutez cette section pour chaque dossier -->
-    <div class="card">
-        <div class="header">
-            <div class="img-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="Image Alt Text">
+    <div class="container">
+        <!-- Première paire de cartes -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="header">
+                        <div class="img-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="Image Alt Text">
+                        </div>
+                        <span class="title">Api Pokemon</span>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Contient la documentation de l'api Pokemon qui permet de récupérer des informations sur les pokémons
+                        </p>
+                        <a class="btn-link">Télécharger</a>
+                    </div>
+                </div>
             </div>
-            <span class="title">Api pokemon  </span>
-        </div>
-
-        <div class="content">
-            <p>
-                Contenu du dossier...
-            </p>
-
-            <a class="btn-link">Lire la suite...</a>
-        </div>
-    </div>
-    <!-- Ajoutez cette section pour chaque dossier -->
-    <div class="card">
-        <div class="header">
-            <div class="img-box">
-                <img src="https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg" alt="Another Image Alt Text">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="header">
+                        <div class="img-box">
+                            <img src="https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg" alt="Another Image Alt Text">
+                        </div>
+                        <span class="title">Api Bibliothèque</span>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Contient la documentation de l'api Bibliothèque
+                        </p>
+                        <a class="btn-link">Télécharger</a>
+                    </div>
+                </div>
             </div>
-            <span class="title">Api bibliothéque </span>
         </div>
-
-        <div class="content">
-            <p>
-                Contenu de l'autre dossier...
-            </p>
-
-            <a class="btn-link">Lire la suite...</a>
-        </div>
-    </div>
-    <!-- Continuez d'ajouter des sections de carte pour chaque dossier -->
-
+        <!-- Deuxième paire de cartes -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="header">
+                        <div class="img-box">
+                            <img src="" alt="Image Alt Text">
+                        </div>
+                        <span class="title">Tableau de synthése</span>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Contient le tableau de synthese compléter
+                        </p>
+                        <a class="btn-link">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
 </body>
 </html>
