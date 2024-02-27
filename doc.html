@@ -6,24 +6,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="doc.css">
+    
     <link rel="stylesheet" href="index.css">
     <style>
-    
-
-      
-
-        .star-field {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url("https://your-star-field-image.png") repeat;
-            z-index: -1;
-        }
-        
-      
-
         .card {
             margin: 20px;
             background-color: #fff;
@@ -53,36 +38,86 @@
             margin-top: 10px;
             text-align: center;
         }
+     
     </style>
-</head>
-<body>
+   
+    </head>
+    <body>
+        <nav class="menu">
+            <a href="index.html"><i class="fas fa-home icon"></i></a>
+            <a href="techno.html"><i class="fas fa-info-circle icon"></i></a>
+            <a href="contact.html"><i class="fas fa-envelope icon"></i></a>
+            <a href="about.html"><i class="fas fa-graduation-cap icon"></i></a>
+            <a href="doc.html"><i class="fas fa-download icon" ></i></a>
+        </nav>
+    </div>
+
     <div class="bg"></div>
-    <div class="star-field"></div>
 
-    <nav class="menu">
-        <a href="index.html"><i class="fas fa-home icon"></i></a>
-        <a href="techno.html"><i class="fas fa-info-circle icon"></i></a>
-        <a href="contact.html"><i class="fas fa-envelope icon"></i></a>
-        <a href="about.html"><i class="fas fa-graduation-cap icon"></i></a>
-        <a href="doc.html"><i class="fas fa-download icon"></i></a>
-    </nav>
+    <div class="star-field">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
 
-    <div class="container">
-        <!-- Première paire de cartes -->
+    <!-- Ajoutez cette section pour chaque dossier -->
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-6">
                 <div class="card">
                     <div class="header">
                         <div class="img-box">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="Image Alt Text">
                         </div>
-                        <span class="title">Api Pokemon</span>
+                        <span class="title">Api pokemon  </span>
                     </div>
+    
                     <div class="content">
                         <p>
-                            Contient la documentation de l'api Pokemon qui permet de récupérer des informations sur les pokémons
+                            Contient la documentation de l'api pokemon qui permet de récupérer des informations sur les pokémons
                         </p>
+    
                         <a class="btn-link">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+        <!-- Ajoutez cette section pour chaque dossier -->
+       
+        <div class="col-md-6">
+            <div class="card">
+                <div class="header">
+                    <div class="img-box">
+                        <img src="https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg" alt="Another Image Alt Text">
+                    </div>
+                    <span class="title">Api bibliothéque </span>
+                </div>
+    
+                <div class="content">
+                    <p>
+                        Contient la documentation de l'api bibliothéque
+                    </p>
+    
+                    <a class="btn-link">Télécharger</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Continuez d'ajouter des sections de carte pour chaque dossier -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="header">
+                        <div class="img-box">
+                            <img src="https://us.123rf.com/450wm/feelisgood/feelisgood1709/feelisgood170901307/86088787-ic%C3%B4ne-d-extension-de-nom-de-fichier-xls-format-de-fichier-binaire-microsoft-excel-dans-le-style-plat.jpg" alt="Image Alt Text">
+                        </div>
+                        <span class="title">Tableau de synthése</span>
+                    </div>
+    
+                    <div class="content">
+                        <p>
+                            Mon tableau de synthése remplie ...
+                        </p>
+    
+                        <a href="tabsynt.xlsx" class="btn-link" download>Télécharger</a>
                     </div>
                 </div>
             </div>
@@ -90,37 +125,22 @@
                 <div class="card">
                     <div class="header">
                         <div class="img-box">
-                            <img src="https://cdn.britannica.com/83/78183-004-345353F4/Stack-books.jpg" alt="Another Image Alt Text">
+                            <img src="https://us.123rf.com/450wm/feelisgood/feelisgood1709/feelisgood170901307/86088787-ic%C3%B4ne-d-extension-de-nom-de-fichier-xls-format-de-fichier-binaire-microsoft-excel-dans-le-style-plat.jpg" alt="Image Alt Text">
                         </div>
-                        <span class="title">Api Bibliothèque</span>
+                        <span class="title">Création de l'entreprise fictive Lamntek</span>
                     </div>
+    
                     <div class="content">
                         <p>
-                            Contient la documentation de l'api Bibliothèque
+                            Mon tableau de synthése remplie ...
                         </p>
-                        <a class="btn-link">Télécharger</a>
+    
+                        <a href="tabsynt.xlsx" class="btn-link" download>Télécharger</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Deuxième paire de cartes -->
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="header">
-                        <div class="img-box">
-                            <img src="" alt="Image Alt Text">
-                        </div>
-                        <span class="title">Tableau de synthése</span>
-                    </div>
-                    <div class="content">
-                        <p>
-                            Contient le tableau de synthese compléter
-                        </p>
-                        <a class="btn-link">Télécharger</a>
-                    </div>
-                </div>
-            </div>
-            
-</body>
-</html>
+    </div>
+    </body>
+    </html>
+    
